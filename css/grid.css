@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    min-height: 100%;
+    /*Aquí indica el mínimo de altura */
+
+}
+
+html {
+    height: 100%;
+}
+
+/*Los elementos del documento pueden tomar todo el 100% de la pagina*/
+
+.grid-container>* {
+    text-align: center;
+    border-radius: 4px;
+    padding: 10px;
+
+}
+
+
+.header1 {
+    grid-area: header1;
+    background-color: rgb(159, 156, 9);
+    text-align: center;
+    color: rgb(57, 52, 39);
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color: rgb(55, 52, 52);
+    color:  rgb(159, 156, 9) ;!
+}
+
+
+
+.main {
+    grid-area: main;
+    background-color: azure;
+    
+
+}
+
+.footer1 {
+    grid-area: footer1;
+    background-color: rgb(129, 146, 66);
+}
+
+/*Teléfono*/
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header1"
+        "navbar"
+        "main"
+        "footer1"
+    ;
+}
+
+
+@media(min-width: 600px) {
+    .grid-container {
+        grid-template-columns: 200px auto;
+        grid-template-rows: 100px 50px auto 100px;
+        grid-template-areas:
+            "header1 header1"
+            "navbar main"
+            
+            "footer1 footer1"
+        ;
+
+    }
+
+}
+
+
+@media(min-width: 1000px) {
+    .grid-container {
+        grid-template-columns: 200px auto;
+        grid-template-rows: 100px 50px auto 100px;
+        grid-template-areas:
+            "header1 header1 header1"
+            "navbar main main"
+            "navbar main main"
+            "navbar main main"
+            "footer1 footer1 footer1"
+        ;
+
+    }
+
+}
