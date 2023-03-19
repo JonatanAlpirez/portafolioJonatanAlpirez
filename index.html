@@ -1,137 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jonatan Alpirez</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/grid.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <body>
+    <div class="container-fluid">
+      <div class="row flex-nowrap">
+        <div class="col-auto col-md-2 col-xl-2 px-sm-2 px-0 bg-dark">
+          <div
+            class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100"
+          >
+            <a
+              href="/index.html"
+              class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+            >
+              <span class="fs-5 d-none d-sm-inline">Inicio</span>
+            </a>
+            <ul
+              class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+              id="menu"
+            >
+              <!-- Link Normal About me -->
+              <li class="nav-item">
+                <a href="#about" class="nav-link align-middle px-0">
+                  <i class="fs-4 bi-house"></i>
+                  <span class="ms-1 d-none d-sm-inline">About me</span>
+                </a>
+              </li>
 
-  <link rel="stylesheet" href="/css/grid.css">
+              <!-- Link Normal Proyectos -->
+              <li class="nav-item">
+                <a href="#work" class="nav-link align-middle px-0">
+                  <i class="fs-4 bi-house"></i>
+                  <span class="ms-1 d-none d-sm-inline">Work</span>
+                </a>
+              </li>
+              <!-- Menu desplegable (collapse) Habilidades -->
+              <!-- <li>
+                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-speedometer2"></i> <span
+                                    class="ms-1 d-none d-sm-inline">Habilidades</span>
+                            </a>
+                            
+                            <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2
+                                    </a>
+                                </li>
+                            </ul>
+                        </li> -->
+
+              <!-- Link Normal Contacto -->
+              <li>
+                <a href="#contact" class="nav-link px-0 align-middle">
+                  <i class="fs-4 bi-table"></i>
+                  <span class="ms-1 d-none d-sm-inline">Contact</span></a
+                >
+              </li>
+
+              <!-- Menu desplegable (collapse) Bootstrap-->
+              <!-- <li>
+                            <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                <i class="fs-4 bi-bootstrap"></i> <span
+                                    class="ms-1 d-none d-sm-inline">Bootstrap</span></a>
+                            <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span>
+                                        1</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span>
+                                        2</a>
+                                </li>
+                            </ul>
+                        </li> -->
+
+              <!-- Menu desplegable (collapse) Bootstrap-->
+              <!-- <li>
+                            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Products</span> </a>
+                            <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span>
+                                        1</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span>
+                                        2</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span>
+                                        3</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span>
+                                        4</a>
+                                </li>
+                            </ul>
+                        </li> -->
+
+              <!-- Link Normal Contacto -->
+              <!-- <li>
+                            <a href="#" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Customers</span>
+                            </a>
+                        </li> -->
+            </ul>
+
+            <hr />
+
+            <div class="dropdown pb-4">
+              <a
+                href="#"
+                class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                id="dropdownUser1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="/img/jona2.jpg"
+                  alt="hugenerd"
+                  width="30"
+                  height="30"
+                  class="rounded-circle"
+                />
+                <span class="d-none d-sm-inline mx-1">Jonatan Alpirez</span>
+              </a>
+
+              <!--                         <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                            <li><a class="dropdown-item" href="#">New project...</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="hero col py-3"">
+
+        <!-- Start -->
+        <div class="space">
+          <a><h1 class="nameformat">Hi! I'm Jonatan Alpirez</h1></a>
+          <div class="font2format">
+            <marquee
+              behavior="slide"
+              direction="direccion"
+              scrollamount="24"
+              scrolldelay="11"
+            >
+              PhD in Biomedical Sciences - Neurosciences
+            </marquee>
+            <br />
+            <marquee
+              behavior="slide"
+              direction="direccion"
+              scrollamount="22"
+              scrolldelay="10"
+            >
+              Biomedical Engineer
+            </marquee>
+            <br />
+            <marquee
+              behavior="slide"
+              direction="direccion"
+              scrollamount="20"
+              scrolldelay="5"
+            >
+              Data analyst
+            </marquee>
+            <br />
+            <marquee
+              behavior="slide"
+              direction="direccion"
+              scrollamount="25"
+              scrolldelay="15"
+            >
+              Java full stack developer
+            </marquee>
+          </div>
+        </div>
+
+        <!-- About -->
+        <div class="space">
+          <a name="about"> <h1 class="tittle2format">About</h1></a>
+
+          <div class="photoAboutMe">
+            <img src="/img/jona2.jpg" alt="fotojona" class="photo" />
+
+            <div class="story">
+              Mi nombre es Jonatan Alpirez, soy doctor en ciencias biomédicas
+              con una orientación en neurociencias y ingeniero biomédico.
+              <br />
+              <br />
+              Soy un gran apasionado por la programación, de aprender nuevas
+              habilidades y siempre estoy en busca de nuevos desafíos.
+              <br />
+              <br />
+              Actualmente me desempeño como desarrollador Java full stack y como
+              analista de datos que ayuden en la toma de decisiones o para la
+              inferencia de conclusiones en publicaciones científicas.
+            </div>
+          </div>
+
+          <div class="iconSkills">
+            <div class="icons">
+              <a
+                href="https://www.linkedin.com/in/jonatan-alpirez/"
+                target="_blank"
+                ><img src="/img/link.png" alt="iconoLinkedin" width="60px"
+              /></a>
+              <a href="https://github.com/JonatanAlpirez" target="_blank"
+                ><img src="/img/github.png" alt="iconoGithub" width="60px"
+              /></a>
+            </div>
+
+            <div class="skills">
+                Skills:
+                <span class="badge rounded-pill text-bg-primary">Java</span>
+                <span class="badge rounded-pill text-bg-primary">Python</span>
+                <span class="badge rounded-pill text-bg-primary">Javascript</span>
+                <span class="badge rounded-pill text-bg-primary">Tableau</span>
+                <span class="badge rounded-pill text-bg-primary">C/C++</span>
+                <span class="badge rounded-pill text-bg-primary">SQL</span>
+                <span class="badge rounded-pill text-bg-primary">Git/Git-Hub</span>
+
+            </div>
 
 
-</head>
 
+          </div>
+        </div>
 
+        <!-- Work -->
+        <div class="space">
+          <a name="work"> <h1>Work</h1></a>
 
-<title>Jonatan Alpirez</title>
-</head>
+          <div class="projects">
+            <div>Projects:</div>
 
-<body class="grid-container">
+            <br />
 
-  <header class="header1"> Jonatan Alpirez
-    <marquee behavior="scroll" direction="direccion" scrollamount="5">
-      PhD in Biomedical Sciences - Neurosciences | Biomedical Engineer | Data analyst | Java full stack developer
-    </marquee>
-    <br>
+            <div>
+              Data analyst
+              <br />
+              You can see my Taleau profile next:
+              <br />
+              Papers:
+              <br />
+            </div>
+          </div>
+        </div>
 
-    <img src="/img/face.png" alt="iconoFacebook" width="30px">
-    <img src="/img/insta.png" alt="iconoInsta" width="30px">
-    <img src="/img/link.png" alt="iconoLinkedin" width="30px">
-    <img src="/img/github.png" alt="iconoGithub" width="30px">
+        <!-- Contact -->
+        <div class="space">
+          <a name="contact"> <h1>Contact</h1></a>
+        </div>
+      </div>
+    </div>
 
-
-
-  </header>
-
-  <nav class="navbar .flex-sm-column">
-
-    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-    <a class="nav-link" href="#">Proyectos</a>
-    <a class="nav-link" href="#">Habilidades</a>
-    <a class="nav-link" href="#">Más acerca de mi</a>
-  </nav>
-  </nav>
-
-
-
-  <article class="main">
-    <h1><a name"quiensoy"></a>Quien soy</h1>
-    <br>
-    <table>
-      <tr>
-        <td><img src="/img/jona.png" alt="" width="200px>" </td>
-        <td>Mi nombre es Jonatan Alpirez y soy doctor en ciencias biomédicas con una orientación en neurociencias,
-          ingeniero biomédico y un gran apasionado por la programación. Me considero una persona autodidacta y siempre
-          en busca de
-          nuevos desafíos. Tengo
-          experiencia en manipulación y análisis de datos con python y Matlab, pero me gustaría ampliar mis
-          conocimientos y habilidades en ciencia de datos.
-          Recientemente me capacite como desarrollador full stack en Java y busco una oportunidad para seguir
-          desarrollarme en cualquiera de estas áreas. </td>
-      </tr>
-    </table>
-
-
-    <br>
-    <br>
-
-    <h1><a name"proyectos"></a>Proyectos</h1>
-    <br>
-    Desarrollo:
-
-    <br>
-    Publicaciones:
-    <br>
-    Mis proyectos en Tableau:
-    <br>
-    https://public.tableau.com/app/profile/jonatan.alpirez
-
-    <br>
-    <br>
-
-    <h1><a name"habilides"></a>Habilidades</h1>
-    <br>
-
-    Programación:
-    <table>
-
-      <tr>
-        <td><img src="" alt=""></td>
-        <td><img src="" alt=""></td>
-      </tr>
-
-      <tr>
-        <td><img src="" alt=""></td>
-        <td><img src="" alt=""></td>
-      </tr>
-
-
-    </table>
-
-    <br>
-
-    <h1><a name"masdemi"></a>Más acerca de mi</h1>
-    <br>
-    <br>
-
-
-
-
-
-
-
-  </article>
-
-  <footer class="footer1">
-    Contacto:
-    <br>
-    jonatan.alpirez@gmail.com
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-    crossorigin="anonymous"></script>
-
-
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
